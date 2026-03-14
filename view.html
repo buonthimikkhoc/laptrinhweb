@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Danh sách User</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.table-box{
+width:800px;
+margin:auto;
+margin-top:100px;
+background:rgba(255,255,255,0.1);
+border:1px solid rgba(255,255,255,0.5);
+border-radius:20px;
+backdrop-filter:blur(15px);
+padding:30px;
+color:white;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+th{
+background:rgba(255,255,255,0.2);
+}
+
+tr:hover{
+background:rgba(255,255,255,0.1);
+}
+
+.action a{
+text-decoration:none;
+padding:5px 10px;
+border-radius:20px;
+font-size:14px;
+margin:2px;
+}
+
+.edit{
+background:#4CAF50;
+color:white;
+}
+
+.view{
+background:#2196F3;
+color:white;
+}
+
+.delete{
+background:#f44336;
+color:white;
+}
+
+.pagination{
+text-align:center;
+margin-top:20px;
+}
+
+.pagination a{
+color:white;
+padding:8px 12px;
+border:1px solid rgba(255,255,255,0.5);
+margin:3px;
+border-radius:10px;
+text-decoration:none;
+}
+
+.pagination a:hover{
+background:white;
+color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section>
+
+<div class="table-box">
+
+<h2 style="text-align:center">Danh sách User</h2>
+
+<table>
+
+<tr>
+<th>#</th>
+<th>Username</th>
+<th>Email</th>
+<th>Thao tác</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>UPVH</td>
+<td>a@gmail.com</td>
+<td class="action">
+<a class="edit" href="update.html">Edit</a>
+<a class="view" href="view.html">View</a>
+<a class="delete" href="#">Delete</a>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>IFUK</td>
+<td>b@gmail.com</td>
+<td class="action">
+<a class="edit" href="update.html">Edit</a>
+<a class="view" href="view.html">View</a>
+<a class="delete" href="#">Delete</a>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>DZZQ</td>
+<td>c@gmail.com</td>
+<td class="action">
+<a class="edit" href="update.html">Edit</a>
+<a class="view" href="view.html">View</a>
+<a class="delete" href="#">Delete</a>
+</td>
+</tr>
+
+</table>
+
+<div class="pagination">
+
+<a href="#">Previous</a>
+<a href="#">1</a>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">Next</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
