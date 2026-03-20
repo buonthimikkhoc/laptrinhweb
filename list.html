@@ -2,155 +2,182 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Danh sách User</title>
-
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danh sách user</title>
 
 <style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f3f3f3;
+}
 
-.table-box{
-width:800px;
-margin:auto;
-margin-top:100px;
-background:rgba(255,255,255,0.1);
-border:1px solid rgba(255,255,255,0.5);
-border-radius:20px;
-backdrop-filter:blur(15px);
-padding:30px;
-color:white;
+.container{
+    width:900px;
+    margin:30px auto;
+    background:#fff;
+    border:1px solid #999;
+    padding:20px;
+}
+
+.header,.footer{
+    border:1px solid #999;
+    text-align:center;
+    padding:12px;
+}
+
+.header{ margin-bottom:30px; }
+.footer{ margin-top:30px; }
+
+.header a{
+    text-decoration:none;
+    color:#000;
+    margin:0 5px;
+}
+
+.title{
+    text-align:center;
+    font-size:22px;
+    margin:20px 0;
 }
 
 table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
+    width:100%;
+    border-collapse:collapse;
 }
 
-th,td{
-padding:12px;
-text-align:center;
-border-bottom:1px solid rgba(255,255,255,0.3);
+table, th, td{
+    border:1px solid #999;
+}
+
+th, td{
+    padding:8px;
+    text-align:center;
 }
 
 th{
-background:rgba(255,255,255,0.2);
+    background:#eee;
 }
 
-tr:hover{
-background:rgba(255,255,255,0.1);
+.actions a{
+    text-decoration:none;
+    margin:0 5px;
+    color:#0d6efd;
 }
 
-.action a{
-text-decoration:none;
-padding:5px 10px;
-border-radius:20px;
-font-size:14px;
-margin:2px;
-}
-
-.edit{
-background:#4CAF50;
-color:white;
-}
-
-.view{
-background:#2196F3;
-color:white;
-}
-
-.delete{
-background:#f44336;
-color:white;
+.actions a:hover{
+    text-decoration:underline;
 }
 
 .pagination{
-text-align:center;
-margin-top:20px;
+    text-align:center;
+    margin-top:20px;
 }
 
 .pagination a{
-color:white;
-padding:8px 12px;
-border:1px solid rgba(255,255,255,0.5);
-margin:3px;
-border-radius:10px;
-text-decoration:none;
+    display:inline-block;
+    padding:6px 10px;
+    border:1px solid #999;
+    margin:0 3px;
+    text-decoration:none;
+    color:#000;
 }
 
 .pagination a:hover{
-background:white;
-color:black;
+    background:#ddd;
 }
-
 </style>
 
 </head>
 
 <body>
 
-<section>
+<div class="container">
 
-<div class="table-box">
+    <div class="header">
+        <a href="index.html">Home</a> |
+        <a href="#">Đăng xuất</a>
+    </div>
 
-<h2 style="text-align:center">Danh sách User</h2>
+    <div class="title">Danh sách user</div>
 
-<table>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Thao tác</th>
+        </tr>
 
-<tr>
-<th>#</th>
-<th>Username</th>
-<th>Email</th>
-<th>Thao tác</th>
-</tr>
+        <tr>
+            <td>1</td>
+            <td>UPVH</td>
+            <td>ATJW@gmail.com</td>
+            <td class="actions">
+                <a href="update.html">Edit</a> |
+                <a href="view.html">View</a> |
+                <a href="#">Delete</a>
+            </td>
+        </tr>
 
-<tr>
-<td>1</td>
-<td>UPVH</td>
-<td>a@gmail.com</td>
-<td class="action">
-<a class="edit" href="update.html">Edit</a>
-<a class="view" href="view.html">View</a>
-<a class="delete" href="#">Delete</a>
-</td>
-</tr>
+        <tr>
+            <td>2</td>
+            <td>IFUK</td>
+            <td>KULB@gmail.com</td>
+            <td class="actions">
+                <a href="update.html">Edit</a> |
+                <a href="view.html">View</a> |
+                <a href="#">Delete</a>
+            </td>
+        </tr>
 
-<tr>
-<td>2</td>
-<td>IFUK</td>
-<td>b@gmail.com</td>
-<td class="action">
-<a class="edit" href="update.html">Edit</a>
-<a class="view" href="view.html">View</a>
-<a class="delete" href="#">Delete</a>
-</td>
-</tr>
+        <tr>
+            <td>3</td>
+            <td>DZZQ</td>
+            <td>ERNB@gmail.com</td>
+            <td class="actions">
+                <a href="update.html">Edit</a> |
+                <a href="view.html">View</a> |
+                <a href="#">Delete</a>
+            </td>
+        </tr>
 
-<tr>
-<td>3</td>
-<td>DZZQ</td>
-<td>c@gmail.com</td>
-<td class="action">
-<a class="edit" href="update.html">Edit</a>
-<a class="view" href="view.html">View</a>
-<a class="delete" href="#">Delete</a>
-</td>
-</tr>
+        <tr>
+            <td>4</td>
+            <td>NJYY</td>
+            <td>ROIF@gmail.com</td>
+            <td class="actions">
+                <a href="update.html">Edit</a> |
+                <a href="view.html">View</a> |
+                <a href="#">Delete</a>
+            </td>
+        </tr>
 
-</table>
+        <tr>
+            <td>5</td>
+            <td>YUMG</td>
+            <td>KITN@gmail.com</td>
+            <td class="actions">
+                <a href="update.html">Edit</a> |
+                <a href="view.html">View</a> |
+                <a href="#">Delete</a>
+            </td>
+        </tr>
+    </table>
 
-<div class="pagination">
+    <div class="pagination">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
+    </div>
 
-<a href="#">Previous</a>
-<a href="#">1</a>
-<a href="#">2</a>
-<a href="#">3</a>
-<a href="#">Next</a>
+    <div class="footer">
+        Lập trình web @01/2024
+    </div>
 
 </div>
-
-</div>
-
-</section>
 
 </body>
 </html>

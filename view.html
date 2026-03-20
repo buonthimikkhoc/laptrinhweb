@@ -1,156 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Danh sách User</title>
-
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết user</title>
 
 <style>
-
-.table-box{
-width:800px;
-margin:auto;
-margin-top:100px;
-background:rgba(255,255,255,0.1);
-border:1px solid rgba(255,255,255,0.5);
-border-radius:20px;
-backdrop-filter:blur(15px);
-padding:30px;
-color:white;
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f3f3f3;
 }
 
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
+.container{
+    width:900px;
+    margin:30px auto;
+    background:#fff;
+    border:1px solid #999;
+    padding:20px;
 }
 
-th,td{
-padding:12px;
-text-align:center;
-border-bottom:1px solid rgba(255,255,255,0.3);
+.header,.footer{
+    border:1px solid #999;
+    text-align:center;
+    padding:12px;
 }
 
-th{
-background:rgba(255,255,255,0.2);
+.header{ margin-bottom:40px; }
+.footer{ margin-top:40px; }
+
+.header a{
+    text-decoration:none;
+    color:#000;
+    margin:0 5px;
 }
 
-tr:hover{
-background:rgba(255,255,255,0.1);
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.action a{
-text-decoration:none;
-padding:5px 10px;
-border-radius:20px;
-font-size:14px;
-margin:2px;
+.view-box{
+    width:400px;
+    border:1px solid #999;
+    padding:35px 30px;
+    text-align:left;
 }
 
-.edit{
-background:#4CAF50;
-color:white;
+.view-box h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:24px;
 }
 
-.view{
-background:#2196F3;
-color:white;
+.info-row{
+    display:flex;
+    margin-bottom:15px;
 }
 
-.delete{
-background:#f44336;
-color:white;
+.info-row label{
+    width:120px;
+    font-weight:bold;
 }
 
-.pagination{
-text-align:center;
-margin-top:20px;
+.actions{
+    text-align:center;
+    margin-top:25px;
 }
 
-.pagination a{
-color:white;
-padding:8px 12px;
-border:1px solid rgba(255,255,255,0.5);
-margin:3px;
-border-radius:10px;
-text-decoration:none;
+.btn{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:4px;
+    cursor:pointer;
 }
 
-.pagination a:hover{
-background:white;
-color:black;
+.btn:hover{
+    opacity:0.9;
 }
-
 </style>
 
 </head>
 
 <body>
 
-<section>
+<div class="container">
 
-<div class="table-box">
+    <div class="header">
+        <a href="index.html">Home</a> |
+        <a href="#">Đăng xuất</a>
+    </div>
 
-<h2 style="text-align:center">Danh sách User</h2>
+    <div class="content">
 
-<table>
+        <div class="view-box">
+            <h2>Màn hình chi tiết</h2>
 
-<tr>
-<th>#</th>
-<th>Username</th>
-<th>Email</th>
-<th>Thao tác</th>
-</tr>
+            <div class="info-row">
+                <label>Username</label>
+                <div>test1</div>
+            </div>
 
-<tr>
-<td>1</td>
-<td>UPVH</td>
-<td>a@gmail.com</td>
-<td class="action">
-<a class="edit" href="update.html">Edit</a>
-<a class="view" href="view.html">View</a>
-<a class="delete" href="#">Delete</a>
-</td>
-</tr>
+            <div class="info-row">
+                <label>Email</label>
+                <div>test1@gmail.com</div>
+            </div>
 
-<tr>
-<td>2</td>
-<td>IFUK</td>
-<td>b@gmail.com</td>
-<td class="action">
-<a class="edit" href="update.html">Edit</a>
-<a class="view" href="view.html">View</a>
-<a class="delete" href="#">Delete</a>
-</td>
-</tr>
+            <div class="actions">
+                <a href="update.html">
+                    <button class="btn">Chỉnh sửa</button>
+                </a>
+            </div>
 
-<tr>
-<td>3</td>
-<td>DZZQ</td>
-<td>c@gmail.com</td>
-<td class="action">
-<a class="edit" href="update.html">Edit</a>
-<a class="view" href="view.html">View</a>
-<a class="delete" href="#">Delete</a>
-</td>
-</tr>
+        </div>
 
-</table>
+    </div>
 
-<div class="pagination">
-
-<a href="#">Previous</a>
-<a href="#">1</a>
-<a href="#">2</a>
-<a href="#">3</a>
-<a href="#">Next</a>
+    <div class="footer">
+        Lập trình web @01/2024
+    </div>
 
 </div>
-
-</div>
-
-</section>
 
 </body>
 </html>
